@@ -18,7 +18,7 @@ For Dart Web application to run in all the browsers, all the other Browser Vendo
 
 With Dart 2.0, This is not the case. Today, we use Chrome browser(doesn't contain Dart) for Development and release can be transpiled to Javascript, which will work in all Browser. What you are thinking is right, the development, debug can be done & will work only in the Chromium based Browsers. However, I have never tried development based on Opera, so it could be just Chrome.
 
-To answer the question **to which i can compare it to?**, I think NodeJS is the right tool to compare.
+To answer the question **to which i can compare it to?**, I think NodeJS is the right one to compare with.
 
 ### Why NodeJS?
 
@@ -31,4 +31,20 @@ Lets look into some of the comparables in both
 |Single Threaded|Yes|Yes, but supports **isolate**, which is used in projects like Aqueduct|
 |Packages|Tools developed are distributed as Packages, a Package can added as dependency or dev_dependency and used inside another package|Dart itself is a collection of packages, `dart:html`, `dart:io`, `dart:async` are the core packages of dart. both dependencies and dev_dependencies specification are available in Dart|
 |Package specification file|`package.json` file contains all the information relating to the Project, this is not limited to Name, description, license but also list the dependencies and dev_dependencies. `scripts` contains the list of scripts that can be executed using the `npm run` command. `npm init` helps you in generating a simple `NodeJS` project with `package.json` file.|Dart uses `pubspec.yaml`, there is no scripts support. `pub run` is used instead.|
-|Package Manager|`npm` or `yarn`. npm is bundled in NodeJS|`pub` handles everything related to packages. `pub get` & `pub global activate` are the 2 commands used predominantly. Former for installing packages locally and later is for global.|
+|Package Manager|`npm` or `yarn`. npm is bundled in NodeJS|`pub` is bundled in Dart and handles everything related to packages. `pub get` & `pub global activate` are the 2 commands used predominantly. Former for installing packages locally and later is for global.|
+|packages download path|Global packages are store in the `npm` or `yarn` folder, whereas packages dependencies are store inside `node_modules` folder of the current package.|`pub` doesn't store the packages in the package folder, instead store `.packages` file, which contains all package dependencies along with the global pub cache path where it is available.|
+|package lock|`package-lock.json` or `yarn.lock` handles locking of version of dependency packages.|`pubspec.lock` does the same job.|
+
+## Scaffold a basic "Hello world" application
+
+Use `Stagehand` package for scaffolding an basic dart application.
+
+If your needs are different from the template list supported by `Stagehand` then you may have to search the [pub site](https://pub.dartlang.org). I have listed some of them that I know & remember.
+
+1. `flutter create` - flutter provides the CLI tool for scaffolding an flutter application. use `fluttter doctor` to check whether your development environment supports development of Android and IOS.
+
+2. `aqueduct create` - aqueduct provide the CLI tool for scaffolding an Aqueduct based Web Server that can connect with `Postgresql` DB.
+
+3. `angular_cli` provides option to create Component, pipe, service for an AngularDart application which is scaffolded by using `Stagehand`. 
+
+4. use `monorepo` package to hold all the different types of Dart applications in a single Repo.
