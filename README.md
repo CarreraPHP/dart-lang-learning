@@ -22,7 +22,7 @@ To answer the question **to which i can compare it to?**, I think NodeJS is the 
 
 ### Why NodeJS?
 
-Java is a runtime, so does the NodeJS. Why I believe that NodeJS can be compared to the Dart is because of the similarities and more than that you might feel that the Dart has handled some of the problems that has a Javascript Developer we might face in Javascript and NodeJS.
+Java is a runtime, so does the NodeJS. Why I believe that NodeJS can be compared to the Dart is because of the similarities between them. You might feel that Dart has **better handled** some of the problems that, has a Javascript Developer we might have faced in Javascript and NodeJS.
 
 Lets look into some of the comparables in both
 
@@ -48,3 +48,22 @@ If your needs are different from the template list supported by `Stagehand` then
 3. `angular_cli` provides option to create Component, pipe, service for an AngularDart application which is scaffolded by using `Stagehand`. 
 
 4. use `monorepo` package to hold all the different types of Dart applications in a single Repo.
+
+## Focus of this learning guide
+
+If you have come to this page looking for some `flutter` related guide then let me tell you, I at this point of time feel that the documentation provided by Flutter Team is way better than other learning content available online. However, You will be able to find some useful information about other learning guides, blogs & youtube videos available along with the most common issues faced while working with `flutter`.
+
+So ruling out `Flutter`, what's left are the Server/Command-line and Dart for web. Firstly, I will start with AngularDart which provides the same Angular2 Framework we are familiar with in the Type(Java)script Ecosystem. Then as and when required, I will provide guide for the Aqueduct Web Server Framework which I personally use as middleware for persisting Data from Angular to Postgresql(only supported RDMBS by Aqueduct).
+
+## What next? How to proceed from here?
+
+I always prefer the unorthodox approach for learning, **why?** is a different story altogether. By being unorthodox, I am trying to breaking the conventional approach of starting with "Introduction" then to "Table of Content" to each Detailed description about each major topic in the table of content. If you are going in this fashion, you will be able to create a full pledge Application only when you complete the last pages of Appendics.
+
+I will be starting from the content that are traditionally considered to be placed in the appendix and move on create an application with all favours like Routing, Authentication and progress with complex requirements that raises on top of the "one liner" requirement for which we will be developing the application. 
+
+In short, This guide will be my experience learning Dart the hardest way possible.
+
+
+
+
+
